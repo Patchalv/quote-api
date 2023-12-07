@@ -5,13 +5,14 @@
   <title>Quote API</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/x-icon"ç href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   <h1>Quote API</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="add-quote.html">Add a New Quote</a>
+    <a href="update-quote.html">Update a Quote</a>
   </nav>
   <h2>Add a New Quote</h2>
   <div class="inputs">
@@ -19,9 +20,16 @@
     <input id="quote" value="">
     <label for="person">Person:</label>
     <input id="person" value="">
+    <label for="context">Context:</label>
+    <input id="context" value="">
+    <label for="year">Year:</label>
+    <input id="year" value="">
   </div>
   <div>
     <button id="submit-quote">Submit Your Quote</button>
+  </div>
+  <div>
+    <p id="errorMessage" style="display: none;">All input fields must be filled out for a new quote to be created.</p>
   </div>
   <div id="new-quote">
     
